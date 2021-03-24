@@ -23,7 +23,7 @@ export class ProductService {
     return this.httpClient.get<ListRepsonseModel<Product>>(newPath);
   }
   add(product:Product):Observable<ResponseModel>{
-    return this.httpClient.post<ResponseModel>(this.apiUrl+"/add",product,)
+    return this.httpClient.post<ResponseModel>(this.apiUrl+"/add",product)
   }
   
 }
